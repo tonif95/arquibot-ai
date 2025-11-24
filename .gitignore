@@ -1,0 +1,29 @@
+### Python ###
+# Entorno virtual
+venv/
+*.pyc
+__pycache__/
+
+# Logs y bases de datos locales
+*.log
+.coverage
+.pytest_cache
+
+### Base de Datos y Persistencia ###
+# Carpeta de datos de PostgreSQL (Contiene los datos del contenedor Docker)
+# Esta carpeta se regenera cuando levantas el Docker
+postgres_data/
+
+# Archivos de LangChain/LangGraph específicos
+.langchain/
+langchain.sqlite # Aunque usas Postgres, previene archivos temporales de LangChain/LangGraph
+
+### Seguridad y Entorno ###
+# Archivo de variables de entorno (¡Contiene todas tus API Keys y contraseñas!)
+.env
+
+### Docker y Herramientas Locales ###
+# Archivos de la build de Docker (si usas Dockerfile)
+*.swp
+*.bak
+docker-compose.override.yml # Si lo usas para configuraciones locales

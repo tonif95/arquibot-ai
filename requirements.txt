@@ -1,0 +1,19 @@
+# Framework Web
+fastapi
+uvicorn
+python-multipart
+
+# IA y Orquestación
+langchain
+langchain-google-genai
+langgraph
+langchain-community
+
+# Base de Datos
+psycopg2-binary     # Driver estándar de Postgres
+asyncpg             # Driver asíncrono (necesario para FastAPI/LangGraph de alto rendimiento)
+langchain-postgres  # Conectores oficiales para RAG y Checkpoints
+
+# Utilidades
+python-dotenv       # Para leer el archivo .env
+requests            # Para llamar a las APIs externas

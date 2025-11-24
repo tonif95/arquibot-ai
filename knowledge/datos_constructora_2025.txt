@@ -1,0 +1,23 @@
+--- LISTADO DE PRECIOS MATERIALES - ARQUIBOT CONSTRUCCIONES 2025 ---
+
+1. HORMIGÓN Y CEMENTO
+- Hormigón HA-25 para cimientos: $120 EUR por metro cúbico.
+- Cemento Portland gris (saco 50kg): $12 EUR la unidad.
+- Mortero seco M-7.5: $8 EUR el saco.
+
+2. ACERO Y METALES
+- Acero corrugado B 500 S: $1.10 EUR por kg.
+- Mallazo electrosoldado 20x20x5: $45 EUR por panel (6x2.2m).
+
+3. MANO DE OBRA (COSTOS INTERNOS PARA PRESUPUESTOS)
+- Oficial de primera (Albañil): $25 EUR/hora.
+- Peón ayudante: $15 EUR/hora.
+- Capataz de obra: $35 EUR/hora.
+- Arquitecto técnico (visita): $150 EUR por visita.
+
+--- NORMATIVA DE SEGURIDAD Y LICENCIAS ---
+1. NORMA EPP (Equipos de Protección Personal):
+Es obligatorio el uso de casco, botas de seguridad y chaleco reflectante en todas las zonas de obra. La multa interna por incumplimiento es de $50 EUR al trabajador.
+
+2. HORARIOS DE TRABAJO PERMITIDOS:
+Debido a la normativa municipal de ruidos, solo se puede operar maquinaria pesada de 08:00 AM a 06:00 PM de Lunes a Viernes. Sábados solo trabajos manuales y limpieza.
