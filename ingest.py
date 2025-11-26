@@ -16,7 +16,7 @@ def ingest_data():
     print("🚀 Iniciando ingesta de datos con Embeddings Locales...")
 
     # 1. CARGAR
-    file_path = "../knowledge/datos_constructora_2025.txt"
+    file_path = "../knowledge/prueba"
     if not os.path.exists(file_path):
         print(f"❌ Error: No encuentro el archivo en {file_path}")
         return
