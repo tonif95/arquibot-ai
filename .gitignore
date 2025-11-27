@@ -27,3 +27,5 @@ langchain.sqlite # Aunque usas Postgres, previene archivos temporales de LangCha
 *.swp
 *.bak
 docker-compose.override.yml # Si lo usas para configuraciones locales
+
+urlngroktelegram.txt

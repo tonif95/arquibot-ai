@@ -14,7 +14,8 @@ from tools import (
     calcular_costo_mano_obra,
     consultar_clima_obra,
     calcular_logistica_entrega,
-    generar_orden_compra
+    generar_orden_compra,
+    send_email
 )
 # Importamos pool de conexión (necesario para el checkpointer)
 from psycopg_pool import ConnectionPool
@@ -35,7 +36,8 @@ lista_herramientas = [
     calcular_costo_mano_obra,
     consultar_clima_obra,
     calcular_logistica_entrega,
-    generar_orden_compra 
+    generar_orden_compra,
+    send_email
 ]
 
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
@@ -48,8 +50,11 @@ def nodo_agente(state: AgentState):
     Usa tus herramientas para responder. 
     Para preguntas sobre precios, costos o normas, **SIEMPRE DEBES CONSULTAR TU BASE DE CONOCIMIENTO (consultar_base_conocimiento)**.
     Si el usuario pregunta algo relacionado con cuanto le va a costar la mano de obra, tienes que usar la herramienta calcular_costo_mano_obra.
-                            
-    Si vas a comprar algo, necesitas generar una orden de compra y el usuario tiene que aceptarla.""")
+    Si vas a comprar algo, **TU PROCESO DEBE SER ESTRICTAMENTE**:
+    1. Usar la tool **generar_orden_compra**.
+    2. **INMEDIATAMENTE DESPUÉS** de generar la orden, debes usar la tool **send_email** para enviar la orden al proveedor. 
+                            La orden generada debe ser el contenido principal del correo y el asunto del correo debe ser orden de compra.                              
+    """)
     
     return {"messages": [llm_con_herramientas.invoke([sys_msg] + state["messages"])]}
 
